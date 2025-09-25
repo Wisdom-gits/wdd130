@@ -29,6 +29,10 @@ h1 {
   padding: .5rem;
 }
 
+main {
+  max-width: 840px;
+}
+
 main img {
   width: 150px;
   height: auto;
@@ -44,7 +48,12 @@ p {
 }
 
 aside {
-  width: 20em;
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid gray;
+  padding: 1rem;
+  background-color: #e0e0e0;
+  color: #333; 
   text-align: center;
   position: relative;
 }
