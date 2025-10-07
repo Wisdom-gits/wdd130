@@ -13,9 +13,14 @@ header {
     grid-template-columns: auto 1fr; 
     align-items: center; 
     background-color: steelblue;
-    padding: 1rem;
+    padding: 1rem 2rem;
     max-width: 840px;
     margin: 0 auto;
+}
+
+header img {
+    height: 60px;
+    width: auto;
 }
 
 .logo {
@@ -103,5 +108,40 @@ h1 {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 1rem;
+}
+
+.adventures {
+    padding: 2rem;
+    background-color: #eef6f8;
+    text-align: center;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.adventure-gallery figure {
+    flex: 1 1 calc(20% - 1rem);
+    margin: 0;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    border-radius: 0.5rem;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.adventure-gallery img:hover {
+    transform: scale(1.05);
+}
+
+.adventure-gallery figcaption {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: #004d66;
 }
 
