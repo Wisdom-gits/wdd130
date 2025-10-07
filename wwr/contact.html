@@ -4,30 +4,27 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>White Water Rafting Company</title>
+    <title>contact Us - White Water Rafting Company</title>
     <meta name="description" content="Experience thrilling white water rafting adventures 
                 with our expert guides. Safe, fun, and unforgettable trips for all skill levels.">
     <meta name="author" content="Wisdom Uche">
     <link rel="stylesheet" href="styles/rafting.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <img src="images/rafting.jpg" alt="Rafting Company Logo" class="logo">
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html" class="active">Contact</a>
         </nav>
     </header>
     <main>
         <h1>Contact Us</h1>
+        <p>We’d love to hear from you! Whether you’re planning your next adventure or have a suggestion, our team is
+            here to help.</p>
         <h2>Send Us a Message</h2>
         <p>White Water Rafting Company</p>
         <p>Phone: +234-8051884609</p>
@@ -38,9 +35,56 @@
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <footer>
-            <p>©2025 White Water Rafting Company ‖ Wisdom Uche.</p>
-        </footer>
+
+        <section class="employee-profiles">
+            <h2>Our Team</h2>
+            <div class="profile-gallery">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Photo of James - Lead Guide">
+                    <figcaption>James — Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Photo of Maria - Customer Relations">
+                    <figcaption>Maria — Customer Relations</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Photo of Lucas - Adventure Coordinator">
+                    <figcaption>Lucas — Adventure Coordinator</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Whitewater Rafting Adventures. All Rights Reserved.</p>
+    </footer>
+
 </body>
 
 </html>
