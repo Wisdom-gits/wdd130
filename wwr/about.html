@@ -4,50 +4,84 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>White Water Rafting Company</title>
-    <meta name="description" content="Experience thrilling white water rafting adventures 
-                with our expert guides. Safe, fun, and unforgettable trips for all skill levels.">
-    <meta name="author" content="Wisdom Uche">
+    <title>About Us | Rapid Adventures Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 </head>
 
 <body>
-    <header>
-        <img src="images/rafting.jpg" alt="Rafting Company Logo" class="logo">
-        <div id="logo">White Water Rafting</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="hero">
-            <img src="images/hero.png" alt="Compass">
-            <h1>About Us - White Water Rafting Company</h1>
-            <p>Our purpose is to provide safe and exciting outdoor adventures
-                while respecting the natural environment. Our mission is to deliver unforgettable
-                river experiences to guests of all skill levels, prioritizing safety and environmental
-                responsibility. Our creed emphasizes the importance of teamwork, respect for nature,
-                and a commitment to excellence. Our motto is "Paddle into Adventure!" </p>
+    <!-- HERO/BANNER -->
+    <section class="hero" id="hero">
+        <div class="overlay hero-overlay">
+            <div class="hero-content">
+                <h1>Experience the Thrill of the Rapids!</h1>
+                <p>Join Rapid Adventures for unforgettable white water rafting trips.</p>
+                <a href="#about" class="btn-cta">Book Your Adventure</a>
+            </div>
         </div>
-        <section id="history">
-            <h2>Our History</h2>
-            <p>Existing since 1990, we are a team of passionate outdoor enthusiasts dedicated to providing the best
-                rafting experiences.
-                Our guides are trained professionals who prioritize safety and fun on every trip.</p>
-            <h2>Adventure Awaits You</h2>
-            <img src="images/img1.jpg" alt="img1">
-            <img src="images/boat.png" alt="img2">
-            <img src="images/rapids-trees.jpg" alt="img4">
+    </section>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-container">
+            <h1 class="logo">Rapid Adventures</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="trips.html" class="active">Trips</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <section class="about" id="about">
+            <div class="container about-container"><img src="images/hero.png" alt="Rafting Team" class="hero-image" />
+                <h1>About Us</h1>
+                <p>
+                    Our purpose is to provide safe and exciting outdoor adventures
+                    while respecting the natural environment. Our mission is to deliver
+                    unforgettable river experiences to guests of all skill levels,
+                    prioritizing safety and environmental responsibility.
+                    Our creed emphasizes the importance of teamwork, respect for nature,
+                    and a commitment to excellence. Our motto is "Paddle into Adventure!"
+                </p>
+                <p>
+                    Whether you are a first-time paddler or an experienced rafter, our certified guides ensure
+                    your adventure is both thrilling and safe. We’re proud to share our love for nature, teamwork,
+                    and the great outdoors with every guest.
+                </p>
             </div>
         </section>
+
+        <!-- HISTORY SECTION -->
+        <section class="history" id="history">
+            <div class="container history-container"> <img src="images/rafting-team.jpg" alt="Rafting Team"
+                    class="history-image" />
+                <h2>Our History</h2>
+                <p>Founded by outdoor enthusiasts dedicated to creating unforgettable water rafting experiences.
+                    We are a team of passionate outdoor enthusiasts providing the best water rafting experiences.
+                    Reached over 50,000 satisfied rafters and became a trusted regional rafting company.
+                    Our guides are trained professionals who prioritize safety and fun on every trip.
+                </p>
+            </div>
+        </section>
+
+        <!-- MISSION SECTION -->
+        <section class="mission" id="mission">
+            <div class="container">
+                <h2>Our Mission</h2>
+                <p>
+                    To inspire adventure, promote outdoor exploration, and create lifelong memories — one river at a
+                    time.
+                </p>
+            </div>
+        </section>
+
+        <!-- ADVENTURES SECTION -->
         <section class="adventures">
             <h2>Adventures</h2>
             <div class="adventure-gallery">
@@ -63,27 +97,66 @@
                     <img src="images/img5.png" alt="Rafting">
                     <figcaption>Rafting</figcaption>
                 </figure>
-                <figure>
-                    <img src="images/crossedoars.png" alt="crosse doars">
-                    <figcaption>crosse doars</figcaption>
-                </figure>
             </div>
         </section>
     </main>
+
+    <!-- TEAM SECTION -->
+    <section class="team" id="team">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <p class="team-intro">
+                Our expert guides are experienced, certified, and passionate about sharing the excitement of white water
+                rafting.
+            </p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="images/uc.jpg" alt="Wisdom Uche" />
+                    <h3>Wisdom Uche</h3>
+                    <p class="role">Site Manager</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="images/Bimb.jpg" alt="Florence Bimbo" />
+                    <h3>Florence Bimbo</h3>
+                    <p class="role">Adventure Coordinator</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="images/EmmaT.png" alt="Emmanuel David" />
+                    <h3>Emmanuel David</h3>
+                    <p class="role">Safety Instructor</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-        <p>©2025 White Water Rafting Company ‖ Wisdom Uche.</p>
-        <nav class="footer-nav">
-            <a href="https://instagram.com">
-                <img src="images/instagram.jpg" alt="Instagram Logo">
-            </a>
-            <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="Facebook Logo">
-            </a>
-            <a href="https://linkedin.com">
-                <img src="images/linkedin.jpg" alt="LinkedIn Logo">
-            </a>
-        </nav>
+        <p>©2025 ‖ White Water Rafting Company ‖</p>
     </footer>
+
+    <!-- SMOOTH SCROLL SCRIPT -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

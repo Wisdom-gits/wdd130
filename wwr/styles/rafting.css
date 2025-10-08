@@ -1,107 +1,91 @@
-:root{
-    --primary-color: #055a05;  
-    --secondary-color: #f4a261;
-    --accent1-color: #264653; 
-    --accent2-color: #e9c46a;
-    --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, sans-serif;
-    --font-size: 14px;
-}
+/* RESET */
+* { margin:0; padding:0; box-sizing:border-box; }
 
-header {
-    display: grid;
-    grid-template-columns: auto 1fr; 
-    align-items: center; 
-    background-color: steelblue;
-    padding: 1rem;
-    max-width: 840px;
-    margin: 0 auto;
-}
-
-.logo {
-    width: 120px;
-    height: auto;
-}
-
-nav {
-    display: flex;
-    justify-content: flex-end; 
-    gap: 1rem; 
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 0.5rem 0.75rem;
-    border-radius: 0.25rem;
-}
-
-nav a:hover {
-    background-color: #1e6091;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* BODY */
 body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height:1.6;
+  background-color:#f4f9f9;
+  color:#333;
+  scroll-behavior: smooth;
 }
 
-header, main, footer {
-    width: 840px;
-    margin: 0 auto;
-    }
+.container { width:90%; max-width:1100px; margin:0 auto; }
 
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-
-}
-
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-}
-
-.social-media a {
-    text-decoration: none;
-}
-
+/* HERO SECTION */
 .hero {
-    position: relative;
+  background: url('hero-rafting.jpg') center/cover no-repeat;
+  height:80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+.hero-overlay {
+  background-color: rgba(0,0,0,0.5);
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
-
-h1 {
-    position: absolute;
-    top: 20%;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #FFF;
+.hero-content {
+  text-align:center;
+  color:white;
+  padding:0 1rem;
 }
-
-.hero article img {
-    float: right;
-    width: 125px;
+.hero-content h1 {
+  font-size:3rem;
+  margin-bottom:1rem;
+  text-shadow:2px 2px 6px rgba(0,0,0,0.6);
 }
-
-.history-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 1rem;
+.hero-content p {
+  font-size:1.3rem;
+  margin-bottom:2rem;
+  text-shadow:1px 1px 4px rgba(0,0,0,0.6);
 }
+.btn-cta {
+  background-color:#00b4d8;
+  color:white;
+  padding:0.9rem 2rem;
+  border-radius:50px;
+  font-size:1.1rem;
+  text-decoration:none;
+  font-weight:bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.btn-cta:hover { background-color:#0077b6; transform:scale(1.05); }
 
+/* HEADER */
+header {
+  background-color:#0077b6;
+  color:white;
+  padding:1rem 0;
+  position: sticky;
+  top:0;
+  z-index: 1000;
+}
+.header-container {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.logo { font-size:1.8rem; font-weight:bold; }
+.nav-links { list-style:none; display:flex; flex-wrap:wrap; gap:1rem; }
+.nav-links a { color:white; text-decoration:none; font-weight:600; transition:color 0.3s; }
+.nav-links a:hover, .nav-links a.active { color:#caf0f8; }
+
+/* ABOUT */
+.about { background-color:white; padding:3rem 1rem; }
+.about-container { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:2rem; }
+.about-image { width:350px; max-width:100%; border-radius:12px; box-shadow:0 0 15px rgba(0,0,0,0.2); }
+.about-text h2 { color:#0077b6; margin-bottom:1rem; }
+.about-text p { margin-bottom:1rem; text-align:justify; }
+
+/* HISTORY */
+.history { background-color:#e0f7fa; padding:3rem 1rem; text-align:center; }
+.history h2 { color:#0077b6; margin-bottom:2rem; }
+.timeline { display:flex; flex-direction:column; align-items:center; gap:2rem; max-width:700px; margin:0 auto; }
+.timeline-item { display:flex; align-items:flex-start; gap:1rem; text-align:left; background:white; padding:1rem 1.5rem; border-radius:10;
+}
